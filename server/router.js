@@ -1,7 +1,8 @@
 function route(pathname) {
   var parts = pathname.split('/');
-  if (parts.length == 2 && parts[0] == 'fizzbuzz') {
-    console.log('going to route to fizzbuzz(' + parts[1] + ")");
+  console.log(parts);
+  if (parts.length == 3 && parts[1] == 'fizzbuzz') {
+    console.log('going to route to fizzbuzz(' + parts[2] + ")");
   } else {
     console.log('going to route to 404');
   }
